@@ -12,10 +12,10 @@ processed/network_combined.csv
 processed/weather_combined.csv
 processed/battery_clean.csv
 processed/barometer_clean.csv
-processed/location_clean.csv
-processed/activity_clean.csv
+# processed/location_clean.csv   — small, committed
+# processed/activity_clean.csv   — small, committed
 processed/network_clean.csv
-processed/pedometer_clean.csv
+# processed/pedometer_clean.csv  — small, committed
 
 # Python
 __pycache__/

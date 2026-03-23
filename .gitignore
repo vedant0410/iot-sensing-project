@@ -1,0 +1,29 @@
+# Large raw sensor files — keep on Google Drive only
+processed/accelerometer_combined.csv
+processed/accelerometer_clean.csv
+processed/gyroscope_combined.csv
+processed/gyroscope_clean.csv
+processed/barometer_combined.csv
+processed/pedometer_combined.csv
+processed/activity_combined.csv
+processed/location_combined.csv
+processed/battery_combined.csv
+processed/network_combined.csv
+processed/weather_combined.csv
+processed/battery_clean.csv
+processed/barometer_clean.csv
+processed/location_clean.csv
+processed/activity_clean.csv
+processed/network_clean.csv
+processed/pedometer_clean.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# macOS
+.DS_Store

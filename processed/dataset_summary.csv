@@ -1,0 +1,10 @@
+Sensor,Source,Sample Rate,Duration,Rows,Notes
+Accelerometer,iPhone 16 Pro Max (MEMS),10 Hz,7.21 days,"6,192,485",x/y/z in g; ±4σ clipped
+Gyroscope,iPhone 16 Pro Max (MEMS),10 Hz,7.21 days,"6,192,485",x/y/z in rad/s; ±4σ clipped
+Barometer,iPhone 16 Pro Max (MEMS),~1 Hz,7.21 days,"579,124",Pressure in hPa
+Pedometer,iPhone 16 Pro Max (CoreMotion),Event,7.21 days,"17,819",Cumulative steps; daily_steps derived
+Activity,iPhone 16 Pro Max (CoreMotion),Event,7.21 days,"65,415",stationary/walking/running/cycling
+Location,iPhone 16 Pro Max (GPS/WiFi),30 s,7.21 days,"20,983",Lat/lon/speed; −1 sentinels removed
+Battery,iPhone 16 Pro Max,~1 Hz,7.21 days,"613,889",Level 0–1 → %; charging state
+Network,iPhone 16 Pro Max,~0.5 Hz,7.21 days,"307,540",WiFi/Cellular; at_home flag derived
+Weather,Open-Meteo Archive API,Hourly,7.21 days,192,10 atmospheric variables for London

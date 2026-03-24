@@ -429,11 +429,12 @@ if page == "🏠 Overview":
     mean_steps      = int(daily_steps_ser.mean())
     max_steps_day   = int(daily_steps_ser.idxmax())
     max_steps       = int(daily_steps_ser.max())
-    pressure_rise   = round(wd["mean_pressure_hpa"].iloc[-1] - wd["mean_pressure_hpa"].iloc[0], 1)
-    total_rain      = round(wd["total_precip_mm"].sum(), 1)
-    sunny_mask      = wd["total_sunshine_s"] > 20_000
+    wd7             = wd[wd["day"] <= 7]   # restrict to the 7 study days
+    pressure_rise   = round(wd7["mean_pressure_hpa"].iloc[-1] - wd7["mean_pressure_hpa"].iloc[0], 1)
+    total_rain      = round(wd7["total_precip_mm"].sum(), 1)
+    sunny_mask      = wd7["total_sunshine_s"] > 20_000
     sunny_days      = int(sunny_mask.sum())
-    sunny_day_nums  = wd.loc[sunny_mask, "day"].tolist()
+    sunny_day_nums  = wd7.loc[sunny_mask, "day"].tolist()
     sunny_label     = "Days " + ", ".join(str(d) for d in sunny_day_nums) if sunny_day_nums else "None"
 
     c1, c2, c3 = st.columns(3)

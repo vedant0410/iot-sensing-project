@@ -9,7 +9,7 @@ processed/activity_combined.csv
 processed/location_combined.csv
 processed/battery_combined.csv
 processed/network_combined.csv
-processed/weather_combined.csv
+# processed/weather_combined.csv  — small, committed
 processed/battery_clean.csv
 processed/barometer_clean.csv
 # processed/location_clean.csv   — small, committed

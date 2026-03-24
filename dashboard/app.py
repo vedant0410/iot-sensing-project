@@ -431,7 +431,10 @@ if page == "🏠 Overview":
     max_steps       = int(daily_steps_ser.max())
     pressure_rise   = round(wd["mean_pressure_hpa"].iloc[-1] - wd["mean_pressure_hpa"].iloc[0], 1)
     total_rain      = round(wd["total_precip_mm"].sum(), 1)
-    sunny_days      = int((wd["total_sunshine_s"] > 20_000).sum())
+    sunny_mask      = wd["total_sunshine_s"] > 20_000
+    sunny_days      = int(sunny_mask.sum())
+    sunny_day_nums  = wd.loc[sunny_mask, "day"].tolist()
+    sunny_label     = "Days " + ", ".join(str(d) for d in sunny_day_nums) if sunny_day_nums else "None"
 
     c1, c2, c3 = st.columns(3)
     c1.metric("Total Steps",    f"{total_steps:,}",          "7 days")
@@ -441,7 +444,7 @@ if page == "🏠 Overview":
     c4, c5, c6 = st.columns(3)
     c4.metric("Pressure Rise",  f"+{pressure_rise} hPa",    "998 → 1027 hPa")
     c5.metric("Total Rainfall", f"{total_rain} mm",          "Days 1–3")
-    c6.metric("Sunny Days",     f"{sunny_days} / 7",         "Days 2, 4–7")
+    c6.metric("Sunny Days",     f"{sunny_days} / 7",         sunny_label)
 
     st.divider()
 

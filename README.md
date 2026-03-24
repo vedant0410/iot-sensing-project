@@ -145,4 +145,4 @@ iPhone Sensors (Sensor Logger)
 |---|---|
 | Live Dashboard | [vedant-iot-dashboard.streamlit.app](https://vedant-iot-dashboard.streamlit.app) |
 | GitHub Repo | [github.com/vedant0410/iot-sensing-project](https://github.com/vedant0410/iot-sensing-project) |
-| Raw + Large Data | *(Google Drive link — add here)* |
+| Raw + Large Data | [Google Drive — Raw Sensor Logger files](https://drive.google.com/drive/folders/1BZaKtBlSxeQbl19O8JZVS0U18_TbiLw3?usp=sharing) |

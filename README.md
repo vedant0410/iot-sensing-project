@@ -62,7 +62,7 @@ iot-sensing-project/
 
 | Source | Details |
 |---|---|
-| **iPhone 16 Pro Max** | Accelerometer, Gyroscope, Barometer, Pedometer, Activity, Location, Battery, Network — collected via [Sensor Logger](https://www.thelasso.app) |
+| **iPhone 16 Pro Max** | Accelerometer, Gyroscope, Barometer, Pedometer, Activity, Location, Battery, Network — collected via [Sensor Logger](https://www.tszheichoi.com/sensorlogger) |
 | **Open-Meteo API** | Historical hourly weather: temperature, humidity, wind speed, precipitation, sunshine duration, solar radiation, cloud cover |
 
 ---
